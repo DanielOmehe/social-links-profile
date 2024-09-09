@@ -19,6 +19,10 @@
   --font-size: 14px;
 }
 
+body{
+    overflow: hidden;
+}
+
 .profile-wrapper{
     width: 100vw;
     height: 100vh;
@@ -34,6 +38,7 @@
     margin: 0 auto;
     background-color: var(--grey-800);
     border-radius: 1rem;
+    margin-bottom: 2.4rem;
 }
 
 .avatar{
@@ -84,4 +89,42 @@ p{
     color: var(--white);
     font-size: var(--font-size);
     border-radius: .5rem;
+    font-weight: bold;
+}
+
+.buttons-grid a:hover{
+    background: var(--green);
+    color: var(--grey-900);
+}
+
+.attribution{
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--grey-700);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+@media only screen and (max-width: 375px){
+    .profile-wrapper{
+        padding: 3rem 0;
+    }
+
+    .profile-container{
+        width: 330px;
+    }
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+    .attribution{
+        font-size: var(--font-size);
+        padding: 1rem;
+    }
 }
