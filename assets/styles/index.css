@@ -19,14 +19,11 @@
   --font-size: 14px;
 }
 
-body{
-    overflow: hidden;
-}
-
 .profile-wrapper{
+    overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
-    padding: 4rem 0;
+    height: fit-content;
+    padding: 8rem 0;
     background: var(--grey-900);
 }
 
